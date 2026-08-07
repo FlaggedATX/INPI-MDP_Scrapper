@@ -35,7 +35,7 @@ De forma simplificada, o programa segue este fluxo:
 6. Exibe as páginas nas quais o termo foi encontrado.
 7. Remove os PDFs nos quais nenhuma ocorrência foi identificada.
 
-##Observações:
+## Observações:
 
 O projeto ainda está em uma fase inicial e pode apresentar bugs ou comportamentos inesperados.
 
