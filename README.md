@@ -1,4 +1,7 @@
+
 # INPI-MDP_Scrapper
+
+<img width="1920" height="1080" alt="inpithin" src="https://github.com/user-attachments/assets/448a9786-8e03-4932-ab5f-754b64fe0588" />
 
 O **INPI-MDP_Scrapper** é uma aplicação desktop desenvolvida em Python que permite pesquisar termos específicos nas publicações mais recentes do **Instituto Nacional da Propriedade Industrial (INPI)**.
 
