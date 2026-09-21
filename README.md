@@ -3,50 +3,51 @@
 
 <img src="https://github.com/user-attachments/assets/448a9786-8e03-4932-ab5f-754b64fe0588" width="700">
 
-O **INPI-MDP_Scrapper** é uma aplicação desktop desenvolvida em Python que permite pesquisar termos específicos nas publicações mais recentes do **Instituto Nacional da Propriedade Industrial (INPI)**.
+**INPI-MDP_Scrapper** is a desktop application developed in Python that allows users to search for specific terms in recent publications from the **Brazilian National Institute of Industrial Property (INPI)**.
 
-A aplicação utiliza **Selenium em modo headless** para acessar e baixar automaticamente os PDFs das publicações de:
+The application uses **Selenium in headless mode** to automatically access and download PDFs from the following publication categories:
 
-* **Desenhos Industriais**
-* **Marcas**
-* **Patentes**
+* **Industrial Designs**
+* **Trademarks**
+* **Patents**
 
-Após o download, os arquivos são organizados automaticamente em uma pasta criada pelo programa na área de trabalho. Em seguida, a aplicação percorre os documentos e identifica as páginas nas quais o termo pesquisado aparece.
+After downloading the documents, the application automatically organizes them into a folder created on the user's desktop. It then scans the documents and identifies the pages where the searched term appears.
 
-Os PDFs nos quais o termo não é encontrado são automaticamente removidos, mantendo apenas os documentos relevantes para a pesquisa.
+PDFs in which the term is not found are automatically deleted, leaving only the documents relevant to the search.
 
-## Objetivo
+## Objective
 
-O projeto foi desenvolvido como uma ferramenta de automação para facilitar o acompanhamento de novas publicações do INPI, reduzindo a necessidade de consultar manualmente documentos extensos em busca de termos específicos.
+The project was developed as an automation tool to simplify the process of monitoring new INPI publications, reducing the need to manually search through lengthy documents for specific terms.
 
-## Tecnologias utilizadas
+## Technologies Used
 
 * **Python**
-* **PyQt5** — interface gráfica
-* **Selenium** — automação e download dos documentos
-* **pypdf** — extração e pesquisa de texto nos PDFs
+* **PyQt5** — graphical user interface
+* **Selenium** — browser automation and document downloads
+* **pypdf** — PDF text extraction and search
 
-## Funcionamento
+## How It Works
 
-De forma simplificada, o programa segue este fluxo:
+In simplified terms, the application follows this workflow:
 
-1. Acessa o portal de publicações do INPI.
-2. Identifica a publicação mais recente.
-3. Baixa os PDFs de Desenhos Industriais, Marcas e Patentes.
-4. Organiza os arquivos em uma pasta específica na área de trabalho.
-5. Pesquisa o termo informado pelo usuário em cada documento.
-6. Exibe as páginas nas quais o termo foi encontrado.
-7. Remove os PDFs nos quais nenhuma ocorrência foi identificada.
+1. Accesses the INPI publication portal.
+2. Identifies the most recent publication.
+3. Downloads the Industrial Designs, Trademarks, and Patents PDFs.
+4. Organizes the files into a dedicated folder on the user's desktop.
+5. Searches each document for the term provided by the user.
+6. Displays the pages where the term was found.
+7. Deletes PDFs in which no occurrences were identified.
 
-## Observações:
+## Notes
 
-O projeto ainda está em uma fase inicial e pode apresentar bugs ou comportamentos inesperados.
+This project is still in an early stage and may contain bugs or unexpected behavior.
 
-Atualmente, os principais pontos que precisam de melhorias estão relacionados ao **tratamento de erros e à estabilidade da automação**, especialmente em situações como:
+The main areas that currently require improvement are **error handling and automation stability**, particularly in situations such as:
 
-* indisponibilidade ou instabilidade do site do INPI;
-* falhas ou interrupções durante o download;
-* alterações na estrutura do site;
-* PDFs indisponíveis ou corrompidos;
-* mudanças no formato ou conteúdo das publicações;
-* arquivos já existentes no diretório de destino.
+* INPI website unavailability or instability;
+* Download failures or interruptions;
+* Changes to the website's structure;
+* Unavailable or corrupted PDFs;
+* Changes to the format or content of publications;
+* Files that already exist in the destination directory.
+
